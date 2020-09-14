@@ -11,7 +11,7 @@ Difficulty: Easy
 ## Initial enumeration
 [Nmap](https://github.com/nmap/nmap) scan on the target:
 
-`nmap -sV -sC -oN nibbles.nmap $OPTIMUM`
+`nmap -sV -sC -oN optimum.nmap $OPTIMUM`
 
 Flags:
  - `-sV`: Version detection
