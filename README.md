@@ -2,7 +2,7 @@
 This is my [Hack the box](https://www.hackthebox.eu/)'s Optimum write-up.
 
 ## Machine
-OS: GNU/Linux
+OS: Windows
 
 IP: 10.10.10.8
 
